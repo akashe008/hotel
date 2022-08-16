@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="table.css">
+</head>
+<body>
+<div>
+<h1 id="title"><span class="t1">HOTEL SAMPLE</span></h1>
+</div>
+<div class="navbar">
+  <a href="frontpage.html">Home</a>
+  <a href="order.html">Order Food</a>
+  <a href="table.html">Book Table</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="founder.html">Founder</a>
+      <a href="company.html">Company</a>
+    </div>
+  </div> 
+</div>
+<br>
+<form oninput="x.value=parseInt(a.value)" style="background-color: #ddd; width: 600px;padding: 10px;position: relative;left: 420px; top: 20px;">
+  Name:<input id="name" type="text" placeholder="Enter your name..." required style="position: relative;
+  left: 200px;"><br><br>
+  Address:<input type="text" placeholder="Enter your address..." required style="position: relative;
+  left: 185px;"><br><br>
+  No. of Persons:<input type="range" min="1" max="10" value="1" step="1" id="a" onclick="person()" style="position: relative;
+  left: 130px;width: 200px;"><output style="position: relative;bottom: 20px" name="x" for="a b"></output><br><br>
+  Date:<input type="date" style="position: relative;
+  left: 200px;width: 180px;"><br><br>
+  Slots:<select>
+    <option>12pm-2pm</option>
+    <option>2pm-4pm</option>
+    <option>6pm-8pm</option>
+    <option>8pm-10pm</option>
+  </select><br><br>
+  Mobile:<input type="tel" placeholder="Enter your number..." pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required style="position: relative;
+  left: 190px;"><br><br>
+  E-mail:<input type="email" placeholder="Enter your e-mail..." required style="position: relative;
+  left: 192px;"><br><br><br>
+  <input type="submit" formaction="final1.html" style="position: absolute;bottom: 5px; padding: 5px; background-color: #333; color: white; border-radius: 5px;">
+</form>
+</body>
+</html>

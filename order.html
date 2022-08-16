@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="order.css">
+<script src="order.js"></script>
+</head>
+<body>
+<div>
+<h1 id="title"><span class="t1">HOTEL SAMPLE</span></h1>
+</div>
+<div class="navbar">
+  <a href="frontpage.html">Home</a>
+  <a href="order.html">Order Food</a>
+  <a href="table.html">Book Table</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="founder.html">Founder</a>
+      <a href="company.html">Company</a>
+    </div>
+  </div> 
+</div>
+<br>
+<br>
+<br>
+<div id="items" style="color: black; font-size: 20px;">
+  <h2 style="text-align: center;">Order Food</h2>
+  <br>
+    <div style="display: flex;">
+      <img src="vb.jpeg" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Veg Biriyani</b>-<span><b>Rs.130</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="vb">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='vb',n=0)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='vb',n=0)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+  <br>
+    <div style="display: flex;">
+      <img src="pb.png" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Paneer Biriyani</b>-<span><b>Rs.160</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="pb">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='pb',n=1)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='pb',n=1)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+  <br>
+    <div style="display: flex;">
+      <img src="cb.jpg" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Chicken Biriyani</b>-<span><b>Rs.180</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="cb">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='cb',n=2)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='cb',n=2)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+  <br>
+    <div style="display: flex;">
+      <img src="mb.jpg" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Mutton Biriyani</b>-<span><b>Rs.220</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="mb">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='mb',n=3)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='mb',n=3)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+  <br>
+    <div id="vegf" style="display: flex;">
+      <img src="vf.jpg" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Veg Fried-Rice</b>-<span><b>Rs.110</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="vf">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='vf',n=4)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='vf',n=4)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+  <br>
+    <div style="display: flex;">
+      <img src="cf.jpg" width="50px" height="50px" style="padding-left:20px; padding-right: 20px;">
+  <p><b>Chicken Fried-Rice</b>-<span><b>Rs.160</b></span></p>
+  <div class="input-group">
+  <input type="number" min="0" placeholder="0" style="text-align:center; width:50px;height:10px;" id="cf">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="dec(id='cf',n=5)"><b>-</b></button>
+  </span>
+    <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" onclick="inc(id='cf',n=5)"><b>+</b></button>
+  </span>
+  </div>
+</div>
+<hr>
+</div>
+<a href="#placeorder"><button onclick="placeorder()" style="position: relative;left: 750px; width: 100px;height: 50px;background-color: #ddd;border-radius: 10px;">Add</button></a>
+<button style="position: relative;left: 780px; width: 100px;height: 50px;background-color: #ddd;border-radius: 10px;" onclick="reset()">Reset</button>
+<div id="placeorder" style="font-family: 'Lucida Console', monospace; ">
+  <h3 style="text-align: center;">Bill</h3>
+  <div style="display: flex;">
+    <h3 style="padding-right: 300px;">Item</h3>
+    <h3 style="padding-right: 300px;">Quantity</h3>
+    <h3 style="padding-right: 300px;">Price</h3>
+  </div>
+  <br>
+  <div style="display: flex;">
+  <p id="vbi" style="margin-left: 5px;"></p>
+  <p id="vbq" style="margin-left: 300px;"></p>
+  <p id="vbp" style="margin-left: 320px;"></p>
+</div>
+<div style="display: flex;">
+  <p id="pbi" style="margin-left: 5px;"></p>
+  <p id="pbq" style="margin-left: 282px;"></p>
+  <p id="pbp" style="margin-left: 320px;"></p>
+</div>
+<div style="display: flex;">
+  <p id="cbi" style="margin-left: 5px;"></p>
+  <p id="cbq" style="margin-left: 272px;"></p>
+  <p id="cbp" style="margin-left: 320px;"></p>
+</div>
+<div style="display: flex;">
+  <p id="mbi" style="margin-left: 5px;"></p>
+  <p id="mbq" style="margin-left: 280px;"></p>
+  <p id="mbp" style="margin-left: 320px;;"></p>
+</div>
+<div style="display: flex;">
+  <p id="vfi" style="margin-left: 5px;"></p>
+  <p id="vfq" style="margin-left: 286px;"></p>
+  <p id="vfp" style="margin-left: 320px;"></p>
+</div>
+<div style="display: flex;">
+  <p id="cfi" style="margin-left: 5px;"></p>
+  <p id="cfq" style="margin-left: 260px;"></p>
+  <p id="cfp" style="margin-left: 320px;"></p>
+</div>
+  <hr>
+  <p id="total" style="margin-left: 675px;"></p>
+  </div>
+ <button onclick="final()" style="position: relative;left: 780px; width: 150px;height: 50px;background-color: #ddd;border-radius: 10px;">Place Order</button>
+</body>
+</html>

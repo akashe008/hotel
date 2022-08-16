@@ -1,0 +1,94 @@
+
+body {
+  background-color: lightblue;
+  padding: 0px;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+.t1{
+  background-color: #ddd;
+}
+
+.navbar {
+margin-left: 20px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+color:black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#intro{
+  width: 100%;
+  height: 320px;
+  background-color: grey;
+  border: 10px;
+  border-color: white;
+  border-width: 20px;
+  background-image: url("founderback.jpg");
+}
+
+.intro{
+  font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+  font-size: 20px;
+}
+
+h2 {
+  color: navy;
+  margin-left: 200px;
+}

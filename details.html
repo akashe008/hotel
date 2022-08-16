@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="details.css">
+<script src="details.js"></script>
+</head>
+<body>
+<div>
+<h1 id="title"><span class="t1">HOTEL SAMPLE</span></h1>
+</div>
+<div class="navbar">
+  <a href="frontpage.html">Home</a>
+  <a href="order.html">Order Food</a>
+  <a href="table.html">Book Table</a>
+  <a href="contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">About 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="founder.html">Founder</a>
+      <a href="company.html">Company</a>
+    </div>
+  </div> 
+</div>
+<br>
+<h2 style="text-align: center">Enter your details</h2>
+<form style="background-color: #ddd; width: 600px;padding: 10px;position: relative;left: 450px; top: 20px;">
+  Name:<input id="na" type="text" placeholder="Enter your name..." required style="position: relative;
+  left: 200px;"><br><br>
+  Address:<input type="text" placeholder="Enter your address..." required style="position: relative;
+  left: 185px;"><br><br>
+  Mobile:<input type="tel" placeholder="Enter your number..."  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required style="position: relative;
+  left: 190px;"><br><br>
+  E-mail:<input type="email" placeholder="Enter your e-mail..." required style="position: relative;
+  left: 192px;"><br><br><br>
+  <input onclick="al()" type="submit" formaction="final.html" style="position: absolute;bottom: 5px; padding: 5px; background-color: #333; color: white; border-radius: 5px;">
+</form>
+</body>
+</html>
